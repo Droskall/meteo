@@ -4,6 +4,7 @@ let divResume = document.getElementById("resume");
 btnChearch.addEventListener('click', ()=> {
     let features = "menuba=no, scrollbars=no, width=600, height=500, status=no, toolbar=no";
     myWindow = window.open("TF1 Météo Intro [720p] [2020] [FR].mp4", '', features);
+
     let city = document.getElementById("input").value;
     let requesturl = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=metric&lang=fr&appid=4711dd873ab37e925e454dd1a9138fc0";
     let xhr = new XMLHttpRequest();
@@ -21,7 +22,7 @@ btnChearch.addEventListener('click', ()=> {
             + "°C, " + "ressentie : " + Math.ceil(response.main.feels_like) + "°C" + "<br>";
         divResume.innerHTML += "<br>" + response.weather[0].description + "<br>";
         divResume.innerHTML += "Humidité : " + response.main.humidity +" %" + "<br>";
-        divResume.innerHTML += "Vent : " + response.wind.speed + " km/h";
+        divResume.innerHTML += "Vent : " + response.wind.speed + " km/h" + "<br>";
     }
     xhr.send();
 })
