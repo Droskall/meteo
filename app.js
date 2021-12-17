@@ -25,5 +25,10 @@ btnChearch.addEventListener('click', ()=> {
         divResume.innerHTML += "Vent : " + response.wind.speed + " km/h" + "<br>";
     }
     xhr.send();
+});
+
+let btnReset = document.getElementById('reset');
+btnReset.addEventListener('click', () => {
+    location.reload();
 })
 
