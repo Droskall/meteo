@@ -7,3 +7,7 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #a7a7e5;
+}
