@@ -70,7 +70,7 @@ h1 {
     }
 }
 
-.x1 {
+.c1 {
     -webkit-animation: animateCloud 35s linear infinite;
     -moz-animation: animateCloud 35s linear infinite;
     animation: animateCloud 35s linear infinite;
@@ -79,7 +79,7 @@ h1 {
     transform: scale(0.65);
 }
 
-.x2 {
+.c2 {
     -webkit-animation: animateCloud 20s linear infinite;
     -moz-animation: animateCloud 20s linear infinite;
     animation: animateCloud 20s linear infinite;
@@ -88,7 +88,7 @@ h1 {
     transform: scale(0.3);
 }
 
-.x3 {
+.c3 {
     -webkit-animation: animateCloud 30s linear infinite;
     -moz-animation: animateCloud 30s linear infinite;
     animation: animateCloud 30s linear infinite;
